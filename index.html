@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      background: hsl(30, 38%, 92%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+   
+    }
+    .card{
+      background: white;
+      border: 1px solid white;
+      border-radius: 0.5em;
+    }
+    .img-sec{
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .sec-im{
+      max-width: 100%;
+      border-top-left-radius: 0.5em ;
+      border-top-right-radius: 0.5em;
+    }
+    .text-sec{
+      padding: 1em;
+      margin-top: -1em;
+    }
+
+    .title{
+      font-family: "Montserrat";
+      color: hsl(228, 12%, 48%);
+      letter-spacing: 0.3em;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    .tit{
+      font-family: "Fraunces";
+      font-size: 1.6em;
+    }
+    .para{
+      font-family: "Montserrat";
+      font-weight: 600;
+      color: hsl(228, 12%, 48%);
+      font-size: 0.8em;
+    }
+    .price{
+      color: hsl(158, 36%, 37%);
+      
+    }
+    h6{
+      margin-left: 10em;
+      margin-top: -3.7em;
+      text-decoration:line-through;
+      color: hsl(228, 12%, 48%);
+      font-size: 0.8em;
+      font-weight: 600;
+      font-family: "Montserrat";
+    }
+    .cart-sec{
+      background:hsl(158, 36%, 37%) ;
+      width: 100%;
+      height: 3em;
+      border: 1px solid hsl(158, 36%, 37%);
+      border-radius: 0.5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    .cart-im{
+      float: left;
+      margin-right: 0.6em;
+    }
+    .sec-i{
+      display: none;
+    }
+
+    @media screen and  (min-width:500px){
+      body{
+        height: 100vh;
+      }
+      .card{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 600px;
+      }
+      .img-sec{
+        width: 261px;
+        float: left;
+        margin-left: -6px;
+      }
+      .sec-im{
+        
+        height: 70vh;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.5em;
+        display: none;
+      }
+      .text-sec{
+        width: 50%;
+        float: right;
+      }
+      .sec-i{
+        display:flex;
+        max-width: 100%;
+      }
+      .cart-sec{
+        width: 100%;
+      }
+    }
+
+    
+  
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="img-sec">
+      <img src="images/image-product-desktop.jpg"  class="sec-i sec-im">
+      <img src="images/image-product-mobile.jpg" alt="" class="sec-im">
+    </div>
+    <div class="text-sec">
+      <h5 class="title">PERFUME</h5>
+      <h1 class="tit">Gabrielle Essence Eau De Parfum</h1>
+      <p class="para">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
+    
+      <h1 class="price">$149.99</h1>  
+      <h6>$169.99</h6>
+      <button class="cart-sec">
+        <img src="images/icon-cart.svg" alt="" class="cart-im">
+        <h5 class="pr">Add to Cart</h5>
+      </button>
+    </div>
+  </div>
+</body>
+</html>
